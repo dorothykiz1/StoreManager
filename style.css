@@ -1,29 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    /* background-image: url(""); */
-    /* background-repeat: no-repeat; */
 }
-
-
-/* .icons {
-    max-width: 100%;
-    height: 20px;
-    padding: 5px;
-    background-color: rgb(104, 58, 104);
-    color: rgb(153, 136, 153);
-    text-align: right;
-} */
-
-
-/* 
-.icons label {
-    padding: 10px;
-}
-
-.icons label span {
-    color: rgb(40, 148, 40);
-} */
 
 
 /* Css for the icon class */
@@ -83,7 +61,7 @@ body {
 }
 
 
-/*  its position */
+/*  dropdown button position */
 
 .dropdown-b {
     position: relative;
@@ -148,25 +126,6 @@ body {
     font-size: small;
 }
 
-
-/* 
-.mid-section {
-    display: flex;
-    justify-content: space-between;
-}
-
-.invent img {
-    width: 120%;
-    background-repeat: no-repeat;
-    border-radius: 150px;
-} */
-
-
-/* 
-.sales {
-    margin-bottom: 60px;
-} */
-
 .sales .sales-pic h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
@@ -199,7 +158,6 @@ body {
     font-size: 80px;
     color: rgb(8, 82, 8);
     font-weight: 700;
-    /* padding-bottom: 25px; */
 }
 
 .collection h5 {
@@ -221,31 +179,6 @@ body {
     text-align: center;
 }
 
-.shopping h4 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 50px;
-    color: rgb(38, 155, 38);
-    font-weight: 600;
-}
-
-.shopping p {
-    color: rgb(221, 158, 42);
-    font-size: 20px;
-}
-
-.shopping a input {
-    background-color: rgb(243, 243, 122);
-    color: purple;
-    border: none;
-    border-radius: 30px;
-    width: 30%;
-    height: 30%;
-    padding: 20px;
-    font-size: large;
-    font-weight: 400;
-    margin-bottom: 70px;
-}
-
 
 /* log class in login.html file */
 
@@ -254,28 +187,7 @@ body {
     justify-content: space-around;
 }
 
-
-/*  .log a input {
-    background-color: rgb(243, 243, 122);
-    color: purple;
-    border: none;
-    border-radius: 30px;
-    width: 30%;
-    height: 10%;
-    padding: 10px;
-    font-size: large;
-    font-weight: 400;
-    margin-bottom: 150px;
-    /* margin-top: 40px */
-
-
-/* margin-top: 20px; */
-
-
-/* margin: 20px; */
-
 .attend {
-    /* text-align: center; */
     margin: 1px auto;
     width: 200%;
     height: 90%;
@@ -299,7 +211,6 @@ body {
     font-size: 15px;
     border: none;
     border-radius: 10px;
-    /* text-align: center; */
 }
 
 .attend form input[type="submit"] {
@@ -322,19 +233,94 @@ body {
     text-decoration: none;
 }
 
-.products {
-    display: flex;
-    justify-content: space-evenly;
+
+/* cart file */
+
+.cart {
+    background-color: rgb(245, 242, 248);
+    color: rgb(114, 54, 114);
 }
 
-.products table tr th {
+.cart .scroll h3 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(187, 216, 187);
+}
+
+table tr td input[type="number"] {
+    /* border: none; */
+    width: 35px;
+    height: 35px;
+}
+
+
+/* records.html */
+
+table tfoot tr {
+    font-size: larger;
+    color: rgb(241, 231, 231);
+    background-color: rgb(148, 95, 135);
+}
+
+.review h4 {
+    color: rgb(114, 89, 138);
+    margin: 40px;
+    font-size: larger;
+    text-align: center;
+}
+
+
+/* attendants file */
+
+table {
+    margin: 50px;
+    padding: 50px;
+}
+
+table tr th {
     font-size: 20px;
     color: rgb(131, 71, 131);
 }
 
-.products table tr td {
-    width: 30px;
-    height: 30px;
+table tr td {
+    width: 10px;
+    height: 10px;
+    padding: 25px;
+}
+
+
+/* fro the products class */
+
+.products table tr td .item label {
+    color: rgb(172, 73, 172);
+    font-size: small;
+}
+
+.products table tr td .item span {
+    color: green;
+}
+
+.products table tr td .item a img {
+    width: 10%;
+    height: 10%;
+}
+
+
+/* admin.html file */
+
+.add {
+    margin: 30px;
+    padding: 10px;
+}
+
+.add img {
+    width: 40px;
+    height: 40px;
+}
+
+.add p {
+    font-size: x-small;
+    color: rgb(70, 49, 90);
 }
 
 
