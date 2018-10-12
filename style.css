@@ -4,7 +4,7 @@ body {
 }
 
 
-/* Css for the icon class */
+/* icon container */
 
 .icon img {
     height: 20px;
@@ -21,6 +21,9 @@ body {
 .icon a:hover {
     color: rgb(92, 88, 92);
 }
+
+
+/* for the nav-bar container */
 
 .nav-bar {
     display: flex;
@@ -39,6 +42,7 @@ body {
 .nav-bar .category ul a {
     text-decoration: none;
     color: rgb(165, 112, 165);
+    padding-left: 20px;
 }
 
 .nav-bar .category ul a:hover {
@@ -47,48 +51,50 @@ body {
 
 .nav-bar .category ul li {
     display: inline;
-    padding-right: 15px;
+    padding-right: 35px;
     text-align: right;
 }
 
 
-/* dropdown Button in the nav bar class */
+/* Drop down container */
 
-.drop {
-    padding: 16px;
-    border: none;
-    font-size: 15px;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
 
-/*  dropdown button position */
+/* Dropdown content(hidden by default) */
 
-.dropdown-b {
-    position: relative;
-    display: inline-block;
-    padding-left: 30px;
-}
-
-.dd-content {
-    background-color: azure;
-    position: absolute;
-    z-index: 1;
+.dropdown-content {
     display: none;
-    min-width: 200px;
+    position: absolute;
+    background-color: rgb(85, 34, 85);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgb(83, 83, 82);
+    z-index: 1;
 }
 
-.dd-content a {
-    color: purple;
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
-    padding: 10px 15px;
+    text-align: left;
 }
 
-.dd-content a:hover {
-    background-color: rgb(226, 198, 243);
+
+/* Add a peach background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: rgb(247, 192, 192);
 }
 
-.drop:hover .dd-content {
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -108,12 +114,6 @@ body {
     color: rgb(121, 207, 149);
     font-size: large;
     font-weight: 600;
-}
-
-.nav-bar.category a .dropdown button {
-    overflow: hidden;
-    border: none;
-    background-color: blueviolet;
 }
 
 .search input {
@@ -191,9 +191,13 @@ body {
     margin: 1px auto;
     width: 200%;
     height: 90%;
-    background-color: rgb(250, 248, 250);
+    background-color: rgb(204, 194, 204);
     position: center;
     margin-bottom: 50px;
+}
+
+.attend form {
+    margin: 20px;
 }
 
 .attend h2 {
@@ -205,7 +209,7 @@ body {
 
 .attend form input {
     display: block;
-    width: 30%;
+    width: 50%;
     height: 40px;
     color: purple;
     font-size: 15px;
@@ -215,6 +219,8 @@ body {
 
 .attend form input[type="submit"] {
     text-align: left;
+    color: rgb(7, 88, 7);
+    background-color: rgb(223, 240, 223);
 }
 
 .attend form label {
@@ -224,8 +230,8 @@ body {
 
 .attend p {
     text-align: center;
-    font-size: xx-small;
-    color: rgb(126, 146, 126);
+    font-size: smaller;
+    color: rgb(39, 65, 39);
 }
 
 .attend a {
@@ -234,17 +240,34 @@ body {
 }
 
 
-/* cart file */
+/* review container */
+
+.review {
+    padding-top: 10px;
+}
+
+.review h4 {
+    color: rgb(63, 36, 88);
+    margin: 40px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+/* cart container */
 
 .cart {
     background-color: rgb(245, 242, 248);
     color: rgb(114, 54, 114);
 }
 
+
+/* for the scroll container in the cart container */
+
 .cart .scroll h3 {
     font-size: 30px;
     text-align: center;
-    color: rgb(187, 216, 187);
+    color: rgb(132, 184, 132);
 }
 
 table tr td input[type="number"] {
@@ -254,23 +277,7 @@ table tr td input[type="number"] {
 }
 
 
-/* records.html */
-
-table tfoot tr {
-    font-size: larger;
-    color: rgb(241, 231, 231);
-    background-color: rgb(148, 95, 135);
-}
-
-.review h4 {
-    color: rgb(114, 89, 138);
-    margin: 40px;
-    font-size: larger;
-    text-align: center;
-}
-
-
-/* attendants file */
+/* for all table elements*/
 
 table {
     margin: 50px;
@@ -288,8 +295,14 @@ table tr td {
     padding: 25px;
 }
 
+table tfoot tr {
+    font-size: larger;
+    color: rgb(241, 231, 231);
+    background-color: rgb(148, 95, 135);
+}
 
-/* fro the products class */
+
+/* products container */
 
 .products table tr td .item label {
     color: rgb(172, 73, 172);
