@@ -1,6 +1,7 @@
-## Store Manager is a web application that helps store owners manage sales and product inventory records
+## Store Manager Application
 
-This application is meant for use in a single store.
+-A web application that helps store owners manage sales and product inventory records
+-This application is meant for use in a single store.
 
 ## Hosting
 
