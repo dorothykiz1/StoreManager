@@ -31,16 +31,21 @@
                 <table>
                     <tr>
                         <th>Product</th>
+                        <th>Description</th>
                         <th>Price</th>
                         <th>Quantity</th>
+                        <th>Total</th>
+
 
                     </tr>
                     <tr>
                         <td>
                             <img src="../StoreManager/images/toys.jpg" alt="20">
-                            <label for="description">Wooden toy set(Out of stock)</label>
+                            <label for="description">Wooden toy set(1 left)</label>
 
-
+                        </td>
+                        <td>
+                            <p>Wooden Toy set which is easy to play with.and wood is highly recomended</p>
                         </td>
                         <td>
                             <span> Ushs 40000</span>
@@ -49,33 +54,63 @@
                         <td>
                             <input type="number" value="1" id="quantity">
                         </td>
+                        <td>
+                            <span> Ushs 40000</span>
+                        </td>
 
                     </tr>
                     <tr>
                         <td>
                             <img src="../StoreManager/images/toys3.jpg" alt="20">
-                            <label for="description">Wooden toy set(Out of stock)</label>
+                            <label for="description">Wooden toy set(1 left)</label>
 
 
                         </td>
+                        <td>
+                            <p>Little men toys-set which is easy to play with.and wood is highly recomended</p>
+                        </td>
+
                         <td>
                             <span> Ushs 35000</span>
 
                         </td>
                         <td>
-                            <input type="number" value="1" id="quantity">
+                            <input type="number" value="2" id="quantity">
                         </td>
+                        <td>
+                            <span>Ushs 70000</span>
 
-                    </tr>
-                    <tr>
-                        <td rowspan="4">Total sales</td>
-                        <td><em> Ushs 95000</em></td>
-
-                    </tr>
+                        </td>
 
                 </table>
             </div>
-            <div></div>
+            <div class="total">
+                <h2>Cart Totals</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Subtotal</th>
+                            <td>Ushs 105000</td>
+                        </tr>
+                        <tr>
+                            <th>Shipping</th>
+                            <td>Ushs 3000</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td>Ushs 3000</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <a href="#">
+                            <input type="submit" value="CHECKOUT" class="checkout">
+                        </a>
+
+                    </tfoot>
+                </table>
+            </div>
+
 
 
         </div>
