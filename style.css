@@ -337,6 +337,80 @@ table tfoot tr {
 }
 
 
+/* atendants container */
+
+.attendants {
+    background-color: rgb(245, 237, 238);
+    padding: 10px;
+}
+
+.attendants h3 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(132, 184, 132);
+}
+
+.attendants a {
+    text-decoration: none;
+    color: brown;
+    font-size: larger;
+    background-color: rgb(201, 191, 192);
+}
+
+.attendants button {
+    background-color: rgb(201, 191, 192);
+    border-radius: 30px;
+    height: 60px;
+    width: 10%;
+    float: right;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+
+.attendants table {
+    margin: auto;
+    border-spacing: 60px;
+}
+
+.attendants table tr th {
+    color: green;
+    margin-right: 20px;
+    padding: 20px;
+    font-size: large;
+    background-color: rgb(216, 206, 226);
+}
+
+.attendants table tr td img {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+}
+
+.attendants table tr td {
+    padding: 50px;
+    width: 40px;
+    font-size: 20px;
+    color: rgb(126, 19, 19);
+}
+
+.attendants table tr:nth-child(even) {
+    background: #d8b5b5;
+}
+
+.attendants table tr:nth-child(even):hover {
+    background: #a36868;
+}
+
+.attendants table tr:nth-child(odd) {
+    background: #b4b0b1;
+}
+
+.attendants table tr:nth-child(odd):hover {
+    background: #756969;
+    color: white;
+}
+
+
 /* footer */
 
 footer {
