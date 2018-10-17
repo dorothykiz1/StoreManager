@@ -3,3 +3,5 @@
 /templates
 /images
 /.vscode
+/tests/__pycache__
+/app/views/__pycache__
