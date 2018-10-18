@@ -1,5 +1,4 @@
-from app.views.product import app
-from app.views.sale import app
+from app.views import app
 
 
 if __name__ == "__main__":
