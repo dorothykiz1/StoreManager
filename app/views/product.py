@@ -1,20 +1,20 @@
-from flask import Flask, json, request
+from flask import Blueprint, request, json
+mod = Blueprint('sales', __name__)
 
-app = Flask(__name__)
 products = []
 
 
-@app.route('/api/v1/products', methods=['POST'])
+@mod.route('/api/v1/products', methods=['POST'])
 def create_product():
     """endpoint to post a product"""
 
     data = request.get_json()
     product = dict(
-        # Id=len(products) + 1,
+        id=len(products)+1,
         title=data['title'],
         description=data['description'],
         quantity=data['quantity'],
-        price=data['price']
+
     )
     products.append(product)
     return json.dumps({'message': 'Product successfully added'}), 201
@@ -31,16 +31,7 @@ def create_product():
 #     """ endpoint to get a single product"""
 
 #     for product in products:
-#         if product.productId == productId:
-#             product_dict = {
-#                 'title': product.title,
-#                 'description': product.description,
-#                 'quantity': product.quantity,
-#                 'price' : product.price
-#             }
-#             products.append(product_dict)
-#     # return json.dumps({'Message': "Your request is successful"}), 200
-#         if product not in products:
-#             return {'message': 'product not in inventory'}, 200
-#         else:
-#             return json.dumps({'product': products[productId]}), 200
+#         if product['id']== productId:
+#             return json.dumps({'Message': product}), 200
+
+#     return json.dumps({'Message': 'product Id out of range'}), 400
