@@ -33,9 +33,10 @@ def create_product():
 #     for product in products:
 #         if product.productId == productId:
 #             product_dict = {
-#                 'category': product.category,
+#                 'title': product.title,
 #                 'description': product.description,
-#                 'quantity': product.quantity
+#                 'quantity': product.quantity,
+#                 'price' : product.price
 #             }
 #             products.append(product_dict)
 #     # return json.dumps({'Message': "Your request is successful"}), 200
