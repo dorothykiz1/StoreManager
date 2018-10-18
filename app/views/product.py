@@ -4,19 +4,19 @@ mod = Blueprint('products', __name__)
 products = []
 
 
-@mod.route('/', methods=['POST'])
-def create_product():
-    """endpoint to post a product"""
+# @mod.route('/', methods=['POST'])
+# def create_product():
+#     """endpoint to post a product"""
 
-    data = request.get_json()
-    product = dict(
-        Id=len(products) + 1,
-        category=data['category'],
-        description=data['description'],
-        quantity=data['quantity']
-    )
-    products.append(product)
-    return json.dumps({'message': 'Product successfully added'}), 201
+#     data = request.get_json()
+#     product = dict(
+#         Id=len(products) + 1,
+#         category=data['category'],
+#         description=data['description'],
+#         quantity=data['quantity']
+#     )
+#     products.append(product)
+#     return json.dumps({'message': 'Product successfully added'}), 201
 
 
 # @mod.route('/', methods=['GET'])
