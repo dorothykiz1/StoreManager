@@ -1,6 +1,6 @@
 ## Store Manager Application
 
-[![Build Status](https://travis-ci.com/dorothykiz1/StoreManager.svg?branch=master)](https://travis-ci.com/dorothykiz1/StoreManager)
+[![Build Status](https://travis-ci.com/dorothykiz1/StoreManager.svg?branch=API)](https://travis-ci.com/dorothykiz1/StoreManager)
 
 [![Coverage Status](https://coveralls.io/repos/github/dorothykiz1/StoreManager/badge.svg?branch=master)](https://coveralls.io/github/dorothykiz1/StoreManager?branch=master)
 
