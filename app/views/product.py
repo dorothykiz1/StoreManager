@@ -11,7 +11,7 @@ def create_product():
         data = request.get_json()
         product = dict(
             Id=len(products) + 1,
-            category=data['category'],
+            title=data['title'],
             description=data['description'],
             quantity=data['quantity']
         )
