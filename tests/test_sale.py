@@ -1,5 +1,6 @@
 from app.views import sale
 from app.views import app
+
 import json
 import pytest
 
