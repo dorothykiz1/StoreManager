@@ -15,6 +15,7 @@ class TestProduct:
 
     def test_create_product(self, client):
         """testing if user can create a product"""
+
         resp = client.post('/', content_type="application/json", data=json.dumps({
             "title": "Off-shoulder dress",
             "description": "stripped dress in only two shades(blue,red)",
