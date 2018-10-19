@@ -7,16 +7,18 @@ products = []
 @mod.route('/', methods=['POST'])
 def create_product():
     """endpoint to post a product"""
-
-    data = request.get_json()
-    product = dict(
-        Id=len(products) + 1,
-        category=data['category'],
-        description=data['description'],
-        quantity=data['quantity']
-    )
-    products.append(product)
-    return json.dumps({'message': 'Product successfully added'}), 201
+    try:
+        data = request.get_json()
+        product = dict(
+            Id=len(products) + 1,
+            category=data['category'],
+            description=data['description'],
+            quantity=data['quantity']
+        )
+        products.append(product)
+        return json.dumps({'message': 'Product successfully added'}), 201
+    except:
+        return json.dumps({'message': 'missing arguments ,please try again'})
 
 
 @mod.route('/', methods=['GET'])
