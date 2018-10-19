@@ -11,7 +11,7 @@ def client():
 
 
 class TestSale:
-    """Testing the sale class"""
+    """Testing the sales class"""
 
     def test_create_new_sale(self, client):
         """testing if asale attendant can create a sale record"""
