@@ -5,4 +5,50 @@
 
 ## Hosting
 
-Follow this link to view the UI templates https://dorothykiz1.github.io/StoreManager/
+Follow this link to view the [Home page] https://dorothykiz1.github.io/StoreManager/
+
+## Functionality
+
+## Products
+
+```
+Get /products/
+POST /products/
+GET /products/<productId>
+
+* The Admin should be able to do the following:
+Add a product to the product inventory
+View all products in the product inventory
+Get aspecific product from the inventory
+
+** The Sale attendant should be able to do the following:
+View all products in the product inventory
+Get aspecific product from the inventory
+
+
+
+POST/products/<productId>
+Expected parameters example: {"title":"three piece set","description":"Blue stripped three pice set with blaser","quantity":3}
+```
+
+## Sales
+
+```
+GET /sales/
+POST /sales/
+GET /sales/<saleId>
+
+* The Admin should be able to do the following:
+View all products in the product inventory
+Get aspecific sale record from the inventory
+
+** The Sale attendant should be able to do the following:
+Add a sale record to the record inventory
+
+POST /sales/<saleId>
+Expected parameters example: {"attendant_Id":"21","attendant_name":"dee"}
+
+
+* A user should be able to see a history of ordered food
+GET /users/myorders/<user_id>
+```
