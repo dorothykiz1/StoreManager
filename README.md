@@ -1,5 +1,7 @@
 ## Store Manager Application
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/758c24d3971768f15921/maintainability)](https://codeclimate.com/github/dorothykiz1/StoreManager/maintainability)
+
 -A web application that helps store owners manage sales and product inventory records
 -This application is meant for use in a single store.
 
