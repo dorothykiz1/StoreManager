@@ -10,15 +10,15 @@ def create_product():
     try:
         data = request.get_json()
         product = dict(
-            Id=len(products) + 1,
-            title=data['title'],
-            description=data['description'],
-            quantity=data['quantity']
+            id=len(products) + 1,
+            title=data["title"],
+            description=data["description"],
+            quantity=data["quantity"]
         )
         products.append(product)
-        return json.dumps({'message': 'Product successfully added'}), 201
+        return json.dumps({'message': product}), 201
     except:
-        return json.dumps({'message': 'missing arguments ,please try again'})
+        return json.dumps({'message': 'missing arguments ,please try again'}), 404
 
 
 @mod.route('/', methods=['GET'])
