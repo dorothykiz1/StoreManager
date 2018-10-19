@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/dorothykiz1/StoreManager.svg?branch=API)](https://travis-ci.com/dorothykiz1/StoreManager)
 
-[![Coverage Status](https://coveralls.io/repos/github/dorothykiz1/StoreManager/badge.svg?branch=master)](https://coveralls.io/github/dorothykiz1/StoreManager?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/dorothykiz1/StoreManager/badge.svg?branch=API)](https://coveralls.io/github/dorothykiz1/StoreManager?branch=API)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/758c24d3971768f15921/maintainability)](https://codeclimate.com/github/dorothykiz1/StoreManager/maintainability)
 
