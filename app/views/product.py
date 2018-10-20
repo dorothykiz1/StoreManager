@@ -20,6 +20,19 @@ def create_product():
     except:
         return json.dumps({'message': 'missing arguments ,please try again'}), 404
 
+# @mod.route('/', methods=['POST'])
+# def validate_product():
+#     """endpoint to post a product"""
+#     data = request.get_json()
+#         product = dict(
+#             id=len(products) + 1,
+#             title=data["title"],
+#             description=data["description"],
+#             quantity=data["quantity"]
+#         )
+#         products.append(product)
+
+       
 
 @mod.route('/', methods=['GET'])
 def get_all_products():
