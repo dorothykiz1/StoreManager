@@ -32,7 +32,6 @@ def create_product():
 #         )
 #         products.append(product)
 
-       
 
 @mod.route('/', methods=['GET'])
 def get_all_products():
