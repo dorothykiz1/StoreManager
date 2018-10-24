@@ -23,13 +23,13 @@ POST /products/
 GET /products/<productId>
 
 The Admin should be able to do the following:
-> Add a product to the product inventory
-> View all products in the product inventory
-> Get aspecific product from the inventory
+1. Add a product to the product inventory
+2. View all products in the product inventory
+3. Get aspecific product from the inventory
 
 The Sale attendant should be able to do the following:
-> View all products in the product inventory
-> Get aspecific product from the inventory
+1. View all products in the product inventory
+2. Get aspecific product from the inventory
 
 
 POST/products/<productId>
@@ -44,11 +44,11 @@ POST /sales/
 GET /sales/<saleId>
 
 The Admin should be able to do the following:
-> View all products in the product inventory
-> Get aspecific sale record from the inventory
+1. View all products in the product inventory
+2. Get aspecific sale record from the inventory
 
 The Sale attendant should be able to do the following:
-> Add a sale record to the record inventory
+1. Add a sale record to the record inventory
 
 POST/sales/<saleId>
 Expected parameters example: {"attendant_Id":"21","attendant_name":"dee"}
